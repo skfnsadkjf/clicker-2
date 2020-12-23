@@ -3,14 +3,38 @@
 <head>
 	<title>Clicker</title>
 	<meta charset="UTF-8">
-	<script src=clicker.js defer></script>
+	<link rel="stylesheet" href="index.css">
+	<script type="module" src=index.js defer></script>
+	<template id="researchTemplate">
+		<div class="research button">
+			<div>
+				<span class="researchTitle"></span>
+				<span class="researchCost"></span>
+			</div>
+			<div class="researchDescription">
+
+			</div>
+		</div>
+	</template>
+	<template id="gridTemplate">
+		<div class="gridTile"></div>
+	</template>
 </head>
 <body>
 	<div id="thingsSection">
 		<div>Things: <span id="things">0</span></div>
 		<div><button id="thingButton">Make Thing</button></div>
 		<div>Thingers: <span id="thingers">0</span></div>
-		<div><button id="thingerButton">Make Thinger</button>Cost: <span id="thingerCost">0</span></div>
+		<div><button id="thingerButton" disabled>Make Thinger</button>Cost: <span id="thingerCost">0</span></div>
+	</div>
+	<div id="research">
+		<h1>Research</h1>
+		<div id="researchList"></div>
+	</div>
+	<div id="grid" style="display:none;">
+		<h1>Grid</h1>
+		<div>Tier: 1</div>
+		<div id="gridGrid"></div>
 	</div>
 </body>
 </html>

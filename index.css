@@ -1,0 +1,36 @@
+.research{
+	height: 54px;
+	width: 300px;
+	text-align: center;
+	background-color: #aaaaaa;
+	border: 2px solid black;
+	padding: 4px;
+}
+.researchTitle{
+	font-weight: bold;
+}
+
+.button[data-affordable=false]{
+	color: #777777;
+}
+
+#gridGrid{
+	display: grid;
+	grid-template-columns: 40px 40px 40px;
+	grid-column-gap: 3px;
+	grid-row-gap: 3px;
+}
+.gridTile{
+	height: 40px;
+	width: 40px;
+	background-color: #aaaaaa;
+	margin: 0px;
+	padding: 0px;
+	line-height: 10px;
+}
+.gridTile.wall{
+	height: 36px;
+	width: 36px;
+	border: 2px solid black;
+	background-color: #444444;
+}
